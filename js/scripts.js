@@ -9,7 +9,7 @@ hakunappi.addEventListener("click", () => {
    const osoite = "https://gutendex.com/books/?search=fiction";
 
     fetch(osoite, {
-    signal: AbortSignal.timeout(10000)
+    signal: AbortSignal.timeout(20000)
 })
         .then(response => {
             if (!response.ok) {
